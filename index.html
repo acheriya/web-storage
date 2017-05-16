@@ -1,11 +1,17 @@
 <!DOCTYPE html>
 <html>
     <head>
+         <script src="aes.js" ></script>  <!-- For Encryption -->
         <script src="web-storage.js" ></script>
-        <script type="text/javascript" >        
-            var storage = new Storage();
-            storage.create("student", { name: "anas" });
-            document.write("Welcome " + storage.get("student").name);
+        <script type="text/javascript" >       
+
+            var storage = new Storage("KEY25444");
+
+            storage.create("employee", { name: "anas" });
+
+            storage.update("employee", { name: "14588 anas 123" });
+            
+            document.write("Welcome " + storage.get("employee").name);
         </script>
     </head>
     <body>
