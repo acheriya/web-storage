@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="web-storage.js" ></script>
+        <script type="text/javascript" >        
+            var storage = new Storage();
+            storage.create("student", { name: "anas" });
+            document.write("Welcome " + storage.get("student").name);
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>    
